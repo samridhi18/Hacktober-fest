@@ -1,0 +1,16 @@
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{
+	int tests,i;
+  scanf("%d",&tests);
+  	for(i=0;i<tests;i++)
+    {
+      int a,b,result;
+      scanf("%d%d",&a,&b);
+      result=~(a ^ (1 << b));
+      printf("%d\n",result);
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
